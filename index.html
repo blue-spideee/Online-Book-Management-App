@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="monitor.css">
+    <title>Book Srote</title>
+</head>
+<body>
+    <div class="book-image">
+        <img src="./images/book.png" alt="logo">
+        <h1>Book Management App</h1>
+        <h3 id="msg" class="message "></h3>
+    </div>
+    <div class="book-form-container">
+        <form id="book-form">
+
+            <div class="input-container">
+                <div class="input-label"><div class="label">Book Name:</div></div>
+                <div class="input-feild"><input class="input-form" type="text" id="book-name" placeholder="Please write book name"></div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-label"><div class="label">Author Name:</div></div>
+                <div class="input-feild"><input class="input-form" type="text" id="author-name" placeholder="Please write author name"></div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-label"><div class="label">Total Page:</div></div>
+                <div class="input-feild"><input class="input-form" type="number" id="total-page" placeholder="Please write total page"></div>
+            </div>            
+ 
+            <div class="input-container">
+                <div id="save-button">
+                    <input class="btn" type="button" value="Add Book" id="add-book" onclick="addToBookList()">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="heading"><h2>Book List</h2></div>
+    <div id="book-table">
+        <table>
+            <thead>
+                <tr>
+                    <td class="sr-no">Sr. No.</td>
+                    <td class="book-name">Book Name</td>
+                    <td class="author">Author Name</td>
+                    <td class="page-no">Reading Page</td>
+                    <td class="total-page">Total Page</td>
+                    <td class="reading-status">Status</td>
+                    <td class="action-btn">Action </td>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

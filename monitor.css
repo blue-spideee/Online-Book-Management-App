@@ -1,0 +1,77 @@
+
+
+body{
+    font-size: 1.2rem;
+}
+.book-image>img{
+    width: 15rem;
+
+}
+.book-image>h1{
+    font-size: 2.5rem;
+    color: green;
+}
+
+#book-form{
+    text-align: center;
+}
+.input-form{
+    margin: 0.2rem 0;
+    height: 1.8rem;
+    width: 25rem;
+    padding-left:0.5rem ;
+}
+.input-container{
+    width: 100%;
+    line-height: 0.2rem;
+    align-items: center;
+    flex-direction: row;
+}
+.input-label{
+    text-align: left;
+    width: 7.5rem;
+    padding-top:0; 
+}
+
+.heading{
+    font-size: 1.5rem;
+}
+table{
+
+    font-size: 1.2rem;
+
+}
+thead{
+    font-size: 1.3rem;
+}
+tr{
+    height: 2.5rem;
+}
+td{
+    padding: 0 0.3rem;
+
+}
+tr:hover{
+    background-color:burlywood;
+}
+.edit,.delete{
+    padding: 0.3rem 0.4rem;
+    width: fit-content;
+}
+.delete:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.edit:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+#book-table{
+    display: flex;
+    justify-content: center;
+}
+#book-list{
+    text-align: center;
+}
